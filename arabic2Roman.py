@@ -4,6 +4,15 @@
 
 
 def arabic2Roman(userInput):
+
+    if userInput == "":
+        print("The input was empty, please enter an arabic numeral")
+        return ""
+    
+
+
+
+
     romans = ["M", "CM", "D", "CD",
               "C", "XC", "L", "XL", "X",
               "IX", "V", "IV", "I"
