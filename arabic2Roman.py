@@ -27,18 +27,19 @@ def main():
 
 def arabic2Roman(userInput, romanString):
     if userInput == 0:
+        romanString = romanString + "0"
         return romanString
     elif userInput == 1:
         romanString = romanString + "I"
         return romanString
-    elif userInput < 4:
-        userInput = userInput - 1
-        print(userInput)
-        romanString = romanString + "I"
-        arabic2Roman(userInput,romanString)
-    elif userInput == 4:
-        romanString = romanString + "IV"
-        return romanString 
+    # elif userInput < 4:
+    #     userInput = userInput - 1
+    #     print(userInput)
+    #     romanString = romanString + "I"
+    #     arabic2Roman(userInput,romanString)
+    # elif userInput == 4:
+    #     romanString = romanString + "IV"
+    #     return romanString 
     # if (userInput < 100) and (userInput >= 50):
     #     userInput % 50
     #     romanString + "L"
