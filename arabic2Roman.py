@@ -5,13 +5,17 @@
 
 def arabic2Roman(userInput):
 
+    #catching empty and corner cases
     if userInput == "":
         print("The input was empty, please enter an arabic numeral")
         return ""
-    
+    if userInput > 3999 and userInput < 0:
+        print("The input is out of range, enter a num between 0 and 3999")
+        return ""
+    if userInput == 0:
+        return 0
 
-
-
+    #Main part of the program starts here
 
     romans = ["M", "CM", "D", "CD",
               "C", "XC", "L", "XL", "X",
