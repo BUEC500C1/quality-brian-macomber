@@ -3,8 +3,8 @@ from arabic2Roman import arabic2Roman
 def test1():
     assert arabic2Roman(33) == "XXXIII"
 
-def empty_test():
+def test_empty():
     assert arabic2Roman() == ""
 
-def max_num():
+def test_maxnum():
     assert arabic2Roman(3999) == "MMMCMXCIX"
