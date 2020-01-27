@@ -3,17 +3,7 @@
 #Sources referenced: https://www.oreilly.com/library/view/python-cookbook/0596001673/ch03s24.html
 
 
-
-def main():
-    userInput = input("Enter an arabic numeral: ")
-    romanString = ""
-    finalRomanString = arabic2Roman(int(userInput),romanString)
-    print("The number %d in roman numerals is %s." % (int(userInput),finalRomanString))
-
-
-
-
-def arabic2Roman(userInput, romanString):
+def arabic2Roman(userInput):
     romans = ["M", "CM", "D", "CD",
               "C", "XC", "L", "XL", "X",
               "IX", "V", "IV", "I"
@@ -30,5 +20,3 @@ def arabic2Roman(userInput, romanString):
         userInput-=(freq*ints[i])
     
     return romanNumString
-
-main()
