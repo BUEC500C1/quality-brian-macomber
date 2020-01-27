@@ -13,5 +13,5 @@ def test_outOfRange_high():
     assert arabic2Roman(4100) == ""
 
 def test_outOfRange_low():
-    assert arabic2Roman(-45) = ""
+    assert arabic2Roman(-45) == ""
 
