@@ -15,3 +15,11 @@ def test_outOfRange_high():
 def test_outOfRange_low():
     assert arabic2Roman(-45) == ""
 
+def test_string():
+    assert arabic2Roman("hello") == ""
+
+def test_character():
+    assert arabic2Roman("i") == ""
+
+
+

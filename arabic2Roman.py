@@ -6,6 +6,9 @@
 def arabic2Roman(userInput):
 
     #catching empty and corner cases
+    if type(userInput) != "int":
+        print("The input was not an integer, please enter an integer")
+        return ""
     if userInput == "":
         print("The input was empty, please enter an arabic numeral")
         return ""
