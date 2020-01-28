@@ -27,3 +27,7 @@ def test_string():
 
 def test_character():
     assert arabic2Roman("i") == ""
+
+
+def test_None():
+    assert arabic2Roman(None) == ""

@@ -12,9 +12,9 @@ def arabic2Roman(userInput):
         print("The input was not an integer, please enter an integer")
         return ""
 
-    if userInput == "":
-        print("The input was empty, please enter an arabic numeral")
-        return ""
+    # if userInput == "":
+    #     print("The input was empty, please enter an arabic numeral")
+    #     return ""
 
     if userInput > 3999 or userInput < 0:
         print("The input is out of range, enter a num between 0 and 3999")
