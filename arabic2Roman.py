@@ -1,11 +1,11 @@
-#Brian Macomber - U25993688
-#EC500 - Assignment 1
-#Sources referenced: https://www.oreilly.com/library/view/python-cookbook/0596001673/ch03s24.html
+# Brian Macomber - U25993688
+# EC500 - Assignment 1
+# Sources referenced: https://www.oreilly.com/library/view/python-cookbook/0596001673/ch03s24.html
 
 
 def arabic2Roman(userInput):
 
-    #catching empty and corner cases
+    # catching empty and corner cases
     if not isinstance(userInput,int):
         print("The input was not an integer, please enter an integer")
         return ""
@@ -18,7 +18,7 @@ def arabic2Roman(userInput):
     if userInput == 0:
         return 0
 
-    #Main part of the program starts here
+    # Main part of the program starts here
 
     romans = ["M", "CM", "D", "CD",
               "C", "XC", "L", "XL", "X",
