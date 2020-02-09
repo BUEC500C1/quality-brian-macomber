@@ -12,10 +12,6 @@ def arabic2Roman(userInput):
         print("The input was not an integer, please enter an integer")
         return ""
 
-    # if userInput == "":
-    #     print("The input was empty, please enter an arabic numeral")
-    #     return ""
-
     if userInput > 3999 or userInput < 0:
         print("The input is out of range, enter a num between 0 and 3999")
         return ""
@@ -31,8 +27,7 @@ def arabic2Roman(userInput):
 
     ints = [1000, 900, 500, 400,
             100, 90, 50, 40, 10,
-            9, 5, 4, 1
-            ]
+            9, 5, 4, 1]
 
     romanNumString = ""
     for i in range(len(ints)):
